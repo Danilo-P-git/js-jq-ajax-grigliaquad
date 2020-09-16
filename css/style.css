@@ -3,25 +3,21 @@
  margin: 0;
  padding: 0;
  }
-
-.square {
-  width: 150px;
-  height: 180px;
-  border: 1px solid black
-}
-
-.container {
+#square {
   width: 900px;
   height: 900px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+}
 
+#square .quadrato {
+  width: 150px;
+  height: 180px;
+  border: 1px solid black
 }
-.yellow {
-  background-color: yellow;
-  border: 1px solid black;
-}
+
+
 .green {
   background-color: green;
   border: 1px solid black;

@@ -4,7 +4,14 @@
 
 $(document).ready(function() {
 
-$(".square").each(function() {
+  var source = $("#square-template").html();
+  var template = Handlebars.compile(source);
+  var html = template();
+  for (var i = 0; i < 36; i++) {
+    $("#square").append(html);
+  }
+
+$(".quadrato").each(function() {
 $(this).click(function() {
 var quadratoSelezionato = $(this);
 
